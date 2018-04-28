@@ -8,10 +8,10 @@
         copy: src=/home/devlikeops/work/files/devlike-app  dest=/etc/apache2/sites-available/ mode=0640
 
       - name: Deactivates the default virtualhost
-        command: ad2dissite default
+        command: a2dissite default
 
       - name: Deactivates the default ssl virtualhost
-        command: ad2dissite default-ssl
+        command: a2dissite default-ssl
 
       - name: Activates our virtualhost
         command: a2ensite devlike-app
