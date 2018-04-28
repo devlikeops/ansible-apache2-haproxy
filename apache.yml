@@ -5,7 +5,7 @@
        become: true 
        apt:  update_cache=true
        
-     -name: Installs necessary packages
+     - name: Installs necessary packages
       become: true 
       apt: pkg={{item}} state=latest
       with_items:
@@ -49,7 +49,11 @@
       -name: Rolling back - Ending playbook
        fail: msg="Configuration file is not valid. Please check that before re-running the playbook."
        when: result|failed
-     
+       
+      -name: Deploy our awesome application
+       git: repo=https://    dest=/var/www/devlike-app
+       tags: deploy
+      
      - name: Deactivates the default virtualhost
        become: true
        command: a2dissite 000-default.conf
