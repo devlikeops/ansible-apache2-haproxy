@@ -1,0 +1,9 @@
+---
+
+- hosts: prod_servers
+  roles:
+     - {role: apache}
+
+- hosts: haproxy
+  roles:
+      - {role: haproxy}

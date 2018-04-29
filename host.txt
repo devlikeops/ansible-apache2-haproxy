@@ -1,0 +1,11 @@
+[haproxy]
+app03.devlikeops.net ansible_host=10.132.0.5
+
+
+[all_prod_servers:children]
+prod_servers
+haproxy
+
+[all_prod_servers:vars]
+ansible_user=devlikeops
+ansible_ssh_private_key_file=/home/devlikeops/.ssh/id_rsa

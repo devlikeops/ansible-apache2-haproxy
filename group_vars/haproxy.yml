@@ -1,0 +1,4 @@
+---
+
+haproxy_check_interval: 3000
+haproxy_stats_socket: /tmp/sock
