@@ -1,4 +1,4 @@
-[all_prod_servers]
+[prod_servers]
 app01.devlikeops.net ansible_host=10.132.0.3
 app02.devlikeops.net ansible_host=10.132.0.4
 
