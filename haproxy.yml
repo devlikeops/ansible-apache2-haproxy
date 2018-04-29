@@ -1,5 +1,6 @@
 ---
--hosts:web
+- name: Configure web
+  hosts:web
 - name: Configure Haproxy
   hosts: haproxy
   become: true
