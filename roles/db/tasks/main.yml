@@ -1,6 +1,6 @@
 ---
 - name: Install MariaDB Repositories 10.2 Stable
- apt: pkg=software-properties-common state=latest update_cache=yes
+  apt: pkg=software-properties-common state=latest update_cache=yes
 
 - name: Add an apt key by id from a keyserver
   apt_key:
@@ -11,5 +11,5 @@
   apt_repository: repo='[arch=amd64,i386,ppc64el] http://mirror.truenetwork.ru/mariadb/repo/10.2/ubuntu xenial main' state=present
 
 - name: Installs mariadb-server
-      apt: pkg=mariadb-server state=latest update_cache=yes
+  apt: pkg=mariadb-server state=latest update_cache=yes
       
