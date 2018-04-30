@@ -3,7 +3,7 @@
   apt: pkg=software-properties-common state=latest update_cache=yes
 
 - name: Add an apt key by id from a keyserver
-  keyserver: keyserver.ubuntu.com:80
+  keyserver: keyserver.ubuntu.com
   id: 0xF1656F24C74CD1D8
   
 - name: Add R repo to sources list
