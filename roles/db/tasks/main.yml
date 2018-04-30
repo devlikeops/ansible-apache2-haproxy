@@ -6,7 +6,7 @@
   apt_key: keyserver=hkp://keyserver.ubuntu.com:80 id=0xF1656F24C74CD1D8
   
 - name: Add R repo to sources list
-  apt_repository: repo='deb [arch=amd64,i386,ppc64el] http://mirror.truenetwork.ru/mariadb/repo/10.2/ubuntu xenial main' state=present
+  apt_repository: repo='deb [arch=amd64,i386,ppc64el] http://mirror.klaus-uwe.me/mariadb/repo/10.2/ubuntu xenial main' state=present
 
 - name: Installs mariadb-server
   apt: pkg=mariadb-server state=latest update_cache=yes
