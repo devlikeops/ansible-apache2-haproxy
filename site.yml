@@ -7,3 +7,7 @@
 - hosts: haproxy
   roles:
       - {role: haproxy}
+      
+- hosts: db
+  roles:
+      - {role: db}
