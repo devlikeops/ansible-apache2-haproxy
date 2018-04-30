@@ -1,6 +1,6 @@
 [db]
-d01 ansible_host=10.132.0.3
-d02 ansible_host=10.132.0.4
+db01 ansible_host=10.132.0.3
+db02 ansible_host=10.132.0.4
 
 [haproxy]
 app03.devlikeops.net ansible_host=10.132.0.5
